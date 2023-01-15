@@ -1,83 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SyllaBuddy</title>
+    <title>SyllaHomie</title>
     <link rel="stylesheet" href="./style1.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body id="body">
+
+</head>
+
+<body id="body">
     <main>
-    <!--Navigation bar at the top of page-->
-    <div class="topnav">
-        <a class="active" href="../index.html">Home</a>
-        <a href="../jacker/comingsoon.html">News</a>
-        <a href="../jacker/comingsoon.html">Contact</a>
-        <a href="../jacker/comingsoon.html">About</a>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div id = 'container'>
-                    <div class="filler"><br><h1>Your Dates 🗓️</h1></br></div>
-                </div>
-            </div>  
+        <!--Navigation bar at the top of page-->
+        <div class="topnav">
+            <a class="active" href="index.html">Home 🏠</a>
+            <a href="./jacker/comingsoon.html">News</a>
+            <a href="./jacker/comingsoon.html">Contact</a>
+            <a href="">About</a>
+            <a href="login" id="google"><img id='logo' src="google.png" />Sign in with Google</a>
         </div>
-    </div>
-    <div class="row" id="buttondiv">
-        <div class="next" id="next">
-            <a class="btn"> Add To Calendar 📅 </a>
-        </div>  
-    </div> 
-    <!-- Container for editor divs-->
-    <!--<button class="test">Extra Dates</button> -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id='container'>
+                        <div class="filler"><br>
+                            <h1>Your Dates 🗓️</h1></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="buttondiv">
+            <div class="next" id="next">
+                <a class="btn" id="one" target="_blank" href="https://calendar.google.com"> Add To
+                    Calendar 📅
+                </a>
+            </div>
+        </div>
+        <!-- Container for editor divs-->
+        <!--<button class="test">Extra Dates</button> -->
     </main>
     <section class="resources">
         <div class="container">
             <div class="box">
                 <div class="row" id="midcol">
-                    <div class="col-10" >
+                    <div class="col-10">
                         <div class="row">
                             <h1>Resources</h1>
                         </div>
                         <div class="row">
                             <h3>Some recommendation for studying...</h3>
                         </div>
-                        
+
                         <div class="row">
                             <p class="recommendations">
-                                There are several YouTube channels that provide educational videos on linear algebra. Here are a few that you may find helpful:
+                                There are several YouTube channels that provide educational videos on linear algebra.
+                                Here are a few that you may find helpful:
 
-                                3Blue1Brown: This channel provides visual and intuitive explanations of mathematical concepts, including linear algebra.
-                                
-                                Khan Academy: This channel provides a wide range of educational videos, including a series on linear algebra.
-                                
-                                PatrickJMT: This channel provides video lectures and tutorials on various mathematical topics, including linear algebra.
-                                
+                                3Blue1Brown: This channel provides visual and intuitive explanations of mathematical
+                                concepts, including linear algebra.
+
+                                Khan Academy: This channel provides a wide range of educational videos, including a
+                                series on linear algebra.
+
+                                PatrickJMT: This channel provides video lectures and tutorials on various mathematical
+                                topics, including linear algebra.
+
                                 Gilbert Strang: MIT Professor Gilbert Strang provides video lectures on linear algebra.
-                                
-                                The Organic Chemistry Tutor: This channel provides video lectures on various topics including linear algebra and multivariable calculus.
-                                
-                                Sebastian Raschka: This channel provides video lectures and tutorials on data science and machine learning, including linear algebra.
-                                
-                                Math Doctor Bob: This channel provides video lectures on Linear Algebra, Calculus and Differential Equations.
-                                
-                                These channels have a lot of contents, you may have to look for the specific videos that are relevant to linear algebra specifically. It is important to find a channel that aligns with your learning style and preferences.
-            <i><br></br>Sourced from ChatGPT</i>
+
+                                The Organic Chemistry Tutor: This channel provides video lectures on various topics
+                                including linear algebra and multivariable calculus.
+
+                                Sebastian Raschka: This channel provides video lectures and tutorials on data science
+                                and machine learning, including linear algebra.
+
+                                Math Doctor Bob: This channel provides video lectures on Linear Algebra, Calculus and
+                                Differential Equations.
+
+                                These channels have a lot of contents, you may have to look for the specific videos that
+                                are relevant to linear algebra specifically. It is important to find a channel that
+                                aligns with your learning style and preferences.
+                                <i><br></br>Sourced from ChatGPT</i>
                             </p>
-                    <div class="next" id="next">
-                        <a class="btn" href="./index.html"> Return Home 🏠</a>
-                    </div>   
+                            <div class="next" id="next">
+                                <a class="btn" id="two" href="./index.html"> Return Home 🏠</a>
+                            </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
-      </section>
-	<script src="editorScript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
+    </section>
+    <script type="text/javascript" src="editorScript.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!--<script type="text/javascript" src="sendToCal.js"></script>-->
+    <script>
+        function homie() {
+
+            alert("A");
+
+            // Require google from googleapis package.
+            const { google } = require('googleapis')
+
+            // Require oAuth2 from our google instance.
+            const { OAuth2 } = google.auth
+
+            // Create a new instance of oAuth and set our Client ID & Client Secret.
+            const oAuth2Client = new OAuth2(
+                '462815548883-qa40khmmso4hv84oj0av9s7h27iifpoe.apps.googleusercontent.com',
+                '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'
+            )
+
+            // Call the setCredentials method on our oAuth2Client instance and set our refresh token.
+            oAuth2Client.setCredentials({
+                refresh_token: '1//044nyUG2uPcs7CgYIARAAGAQSNwF-L9IrbKhLbbbrG6wKCrdEynlu_u6muNK4PyeskeXI-fGjVsjhJKZkOq5s7FQIq68_xWkTP-Q',
+            })
+
+            // Create a new calender instance.
+            const calendar = google.calendar({ version: 'v3', auth: oAuth2Client })
+
+            var eventList = []
+
+
+
+            // Create a dummy event for temp uses in our calendar
+            eventList[0] = {
+                summary: `Assignment 1: Propositional logic (Weeks 1 and 2)`,
+                location: `Middlesex College 110`,
+                colorId: 1,
+                start: {
+                    date: "2023-02-05",
+                    timeZone: 'America/Toronto',
+                },
+                end: {
+                    date: "2023-02-25",
+                    timeZone: 'America/Toronto',
+                },
+            }
+
+            eventList[1] = {
+                summary: `Assignment 2: Propositional logic (Weeks 3-5)`,
+                location: `Middlesex College 110`,
+                colorId: 1,
+                start: {
+                    date: "2023-03-12",
+                    timeZone: 'America/Toronto',
+                },
+                end: {
+                    date: "2023-03-19",
+                    timeZone: 'America/Toronto',
+                },
+            }
+
+            eventList[2] = {
+                summary: `Assignment 3: Predicate logic (Weeks 6-9)`,
+                location: `Middlesex College 110`,
+                colorId: 1,
+                start: {
+                    date: "2023-03-15",
+                    timeZone: 'America/Toronto',
+                },
+                end: {
+                    date: "2023-03-28",
+                    timeZone: 'America/Toronto',
+                },
+            }
+
+            eventList[3] = {
+                summary: `Assignment 4: Predicate logic (Weeks 10-12)`,
+                location: `Middlesex College 110`,
+                colorId: 1,
+                start: {
+                    date: "2023-04-03",
+                    timeZone: 'America/Toronto',
+                },
+                end: {
+                    date: "2023-04-11",
+                    timeZone: 'America/Toronto',
+                },
+            }
+
+            eventList[4] = {
+                summary: `Quiz 1: Propositional logic (Weeks 1 and 2)`,
+                location: `Middlesex College 110`,
+                colorId: 1,
+                start: {
+                    date: "2023-01-22",
+                    timeZone: 'America/Toronto',
+                },
+                end: {
+                    date: "2023-01-23",
+                    timeZone: 'America/Toronto',
+                },
+            }
+
+            eventList[5] = {
+                summary: `Quiz 2: Propositional logic (Weeks 3-5)`,
+                location: `Middlesex College 110`,
+                colorId: 1,
+                start: {
+                    date: "2023-02-12",
+                    timeZone: 'America/Toronto',
+                },
+                end: {
+                    date: "2023-02-13",
+                    timeZone: 'America/Toronto',
+                },
+            }
+
+            eventList[6] = {
+                summary: `Quiz 3: Predicate logic (Weeks 6 and 7)`,
+                location: `Middlesex College 110`,
+                colorId: 1,
+                start: {
+                    date: "2023-03-05",
+                    timeZone: 'America/Toronto',
+                },
+                end: {
+                    date: "2023-03-06",
+                    timeZone: 'America/Toronto',
+                },
+            }
+
+            eventList[7] = {
+                summary: `Quiz 4: Predicate logic (Weeks 8 and 9)`,
+                location: `Middlesex College 110`,
+                colorId: 1,
+                start: {
+                    date: "2023-03-11",
+                    timeZone: 'America/Toronto',
+                },
+                end: {
+                    date: "2023-03-12",
+                    timeZone: 'America/Toronto',
+                },
+            }
+
+            eventList[8] = {
+                summary: `Quiz 5: Logic programs, Prolog, and ASP (Weeks 10-12)`,
+                location: `Middlesex College 110`,
+                colorId: 1,
+                start: {
+                    date: "2023-04-09",
+                    timeZone: 'America/Toronto',
+                },
+                end: {
+                    date: "2023-04-10",
+                    timeZone: 'America/Toronto',
+                },
+            }
+
+            eventList[8] = {
+                summary: `MIDTERM: Propositional Logic (Weeks 1-6)`,
+                location: `Middlesex College 110`,
+                colorId: 1,
+                start: {
+                    date: "2023-02-15",
+                    timeZone: 'America/Toronto',
+                },
+                end: {
+                    date: "2023-02-16",
+                    timeZone: 'America/Toronto',
+                },
+            }
+
+            function delay(time) {
+                return new Promise(resolve => setTimeout(resolve, time));
+            }
+
+
+            calendar.events.insert(
+                { calendarId: 'primary', resource: eventList[0] },
+                err => {
+                    // Check for errors and log them if they exist.
+                    if (err) return console.error('Error Creating Calender Event:', err)
+                    // Else log that the event was created.
+                    return console.log('Calendar event successfully created.')
+                }
+            )
+
+            delay(110).then(() => calendar.events.insert(
+                { calendarId: 'primary', resource: eventList[1] },
+                err => {
+                    // Check for errors and log them if they exist.
+                    if (err) return console.error('Error Creating Calender Event:', err)
+                    // Else log that the event was created.
+                    return console.log('Calendar event successfully created.')
+                }
+            ))
+
+            delay(1000).then(() => calendar.events.insert(
+                { calendarId: 'primary', resource: eventList[2] },
+                err => {
+                    // Check for errors and log them if they exist.
+                    if (err) return console.error('Error Creating Calender Event:', err)
+                    // Else log that the event was created.
+                    return console.log('Calendar event successfully created.')
+                }
+            ))
+
+            delay(500).then(() => calendar.events.insert(
+                { calendarId: 'primary', resource: eventList[3] },
+                err => {
+                    // Check for errors and log them if they exist.
+                    if (err) return console.error('Error Creating Calender Event:', err)
+                    // Else log that the event was created.
+                    return console.log('Calendar event successfully created.')
+                }
+            ))
+
+            delay(450).then(() => calendar.events.insert(
+                { calendarId: 'primary', resource: eventList[4] },
+                err => {
+                    // Check for errors and log them if they exist.
+                    if (err) return console.error('Error Creating Calender Event:', err)
+                    // Else log that the event was created.
+                    return console.log('Calendar event successfully created.')
+                }
+            ))
+
+            delay(700).then(() => calendar.events.insert(
+                { calendarId: 'primary', resource: eventList[5] },
+                err => {
+                    // Check for errors and log them if they exist.
+                    if (err) return console.error('Error Creating Calender Event:', err)
+                    // Else log that the event was created.
+                    return console.log('Calendar event successfully created.')
+                }
+            ))
+
+            delay(1000).then(() => calendar.events.insert(
+                { calendarId: 'primary', resource: eventList[6] },
+                err => {
+                    // Check for errors and log them if they exist.
+                    if (err) return console.error('Error Creating Calender Event:', err)
+                    // Else log that the event was created.
+                    return console.log('Calendar event successfully created.')
+                }
+            ))
+
+            delay(1500).then(() => calendar.events.insert(
+                { calendarId: 'primary', resource: eventList[7] },
+                err => {
+                    // Check for errors and log them if they exist.
+                    if (err) return console.error('Error Creating Calender Event:', err)
+                    // Else log that the event was created.
+                    return console.log('Calendar event successfully created.')
+                }
+            ))
+
+            delay(2000).then(() => calendar.events.insert(
+                { calendarId: 'primary', resource: eventList[8] },
+                err => {
+                    // Check for errors and log them if they exist.
+                    if (err) return console.error('Error Creating Calender Event:', err)
+                    // Else log that the event was created.
+                    return console.log('Calendar event successfully created.')
+                }
+            ))
+
+            delay(1500).then(() => calendar.events.insert(
+                { calendarId: 'primary', resource: eventList[9] },
+                err => {
+                    // Check for errors and log them if they exist.
+                    if (err) return console.error('Error Creating Calender Event:', err)
+                    // Else log that the event was created.
+                    return console.log('Calendar event successfully created.')
+                }
+            ))
+        }
+        var yes = document.getElementById("one").addEventListener("click", () => { homie() });
+    </script>
+</body>
+
 </html>
