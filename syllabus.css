@@ -1,6 +1,6 @@
 /* NAVIGATION BAR */
 body{
-  background-image: url('./anson/Background.png');
+  background-image: url('./Background.png');
     background-attachment: fixed;
 }
 /*Change aspects of navigation bar*/
@@ -8,6 +8,19 @@ body{
     background-image: linear-gradient(160.32deg, #469EEF, #B6B7EF, #B6B7EF,#469EEF);
     overflow: hidden;
     margin-bottom: 40px;
+}
+#google{
+  float:right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Inter", Sans-serif;
+}
+#logo{
+  width: 15px;
+  height: 15px;
 }
 
 /*Change aspects of text*/
@@ -225,4 +238,3 @@ body{
     padding-bottom: 10px;
     padding-top: 20px;
   }
-
